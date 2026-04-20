@@ -71,6 +71,6 @@ params.Set("limit", "10")
 body, err = client.Get(ctx, "/library/search", params)
 ```
 
-`NewClient(baseURL string, timeout time.Duration)` — pass empty string and 0 to use the defaults (`https://orkl.eu/api/v1`, 30s timeout).
+`NewClient(baseURL string, timeout time.Duration)` — pass empty string and 0 to use the defaults (`https://orkl.eu/api/v1`, 60s timeout).
 
 `Get(ctx, path, params)` returns the raw response body as `[]byte` or an error that includes the HTTP status and response body on non-2xx responses.

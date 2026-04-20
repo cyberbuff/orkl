@@ -191,6 +191,6 @@ func optionalBool(v bool) string {
 }
 
 func printUsage(stderr io.Writer) {
-	_, _ = fmt.Fprintln(stderr, "Usage: orkl [--base-url URL] [--timeout DURATION] <command> [flags]")
+	_, _ = fmt.Fprintln(stderr, "Usage: orkl [--timeout DURATION] <command> [flags]")
 	_, _ = fmt.Fprintln(stderr, "Commands: library-info, library-version, library-versions, library-entries, library-entry, library-entry-hash, library-search, source-entries, source-entry, ta-entries, ta-entry")
 }
